@@ -6,30 +6,30 @@
   --color-foreground: hsl(160 45% 8%);
 
   --color-card: hsl(150 12% 93%);
-  --color-card-foreground: hsl(160 45% 8%);
+  --color-card-foreground: hsl(160, 45%, 8%);
 
   --color-popover: hsl(150 12% 93%);
-  --color-popover-foreground: hsl(160 45% 8%);
+  --color-popover-foreground: hsl(160, 45%, 8%);
 
   --color-primary: hsl(160 55% 22%);
-  --color-primary-foreground: hsl(35 60% 90%);
+  --color-primary-foreground: hsl(35, 60%, 90%);
 
-  --color-secondary: hsl(25 55% 60%);
-  --color-secondary-foreground: hsl(160 50% 10%);
+  --color-secondary: hsl(25, 55%, 60%);
+  --color-secondary-foreground: hsl(160, 50%, 10%);
 
-  --color-muted: hsl(150 10% 90%);
-  --color-muted-foreground: hsl(160 15% 40%);
+  --color-muted: hsl(150, 10%, 90%);
+  --color-muted-foreground: hsl(160, 15%, 40%);
 
-  --color-accent: hsl(200 70% 50%);
-  --color-accent-foreground: hsl(160 50% 8%);
+  --color-accent: hsl(200, 70%, 50%);
+  --color-accent-foreground: hsl(160, 50%, 8%);
 
-  --color-destructive: hsl(0 84.2% 60.2%);
-  --color-destructive-foreground: hsl(0 0% 98%);
+  --color-destructive: hsl(0, 84.2%, 60.2%);
+  --color-destructive-foreground: hsl(0, 0%, 98%);
 
   /* Aquí es donde se soluciona tu error específico */
-  --color-border: hsl(160 18% 78%);
-  --color-input: hsl(160 18% 78%);
-  --color-ring: hsl(160 55% 22%);
+  --color-border: hsl(160, 18%, 78%);
+  --color-input: hsl(160, 18%, 78%);
+  --color-ring: hsl(160, 55%, 22%);
 
   --radius-lg: 0.75rem;
 
