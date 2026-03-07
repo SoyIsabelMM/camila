@@ -4,7 +4,7 @@ export function FooterSection() {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+        style={{ backgroundImage: "url('/images/hero-bg-pr.jpg')" }}
       />
       <div className="absolute inset-0 bg-[hsl(153,60%,10%)]/80" />
 
@@ -25,7 +25,7 @@ export function FooterSection() {
           Nos vemos el
         </p>
         <p className="text-3xl md:text-5xl font-serif font-semibold text-secondary mb-2">
-          21 de Marzo, 2026
+          15 de Agosto, 2026
         </p>
         <p className="text-secondary/80 font-body text-base mb-8">
           {'Tu presencia es el mejor regalo'}
@@ -46,15 +46,17 @@ export function FooterSection() {
         </div>
 
         <p className="font-serif text-2xl md:text-3xl italic text-secondary/90 mb-6">
-          {'"Si sigues tu estrella, ella te guiara"'}
+          {
+            '"Nuestro destino vive en nuestro interior. Solo tienes que ser lo suficiente valiente para verlo."'
+          }
         </p>
         <p className="font-body text-sm text-secondary/50">
-          {'- La Princesa Tiana'}
+          {'- La Princesa Merida'}
         </p>
 
         <div className="mt-12 pt-8 border-t border-secondary/20">
           <p className="font-body text-xs text-secondary/40 uppercase tracking-[0.2em]">
-            {'Con amor, la familia Martinez Rodriguez'}
+            {'Con amor, la familia Bravo Mujica'}
           </p>
         </div>
       </div>

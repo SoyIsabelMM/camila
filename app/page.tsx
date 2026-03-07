@@ -6,6 +6,7 @@ import { VideoSection } from '@/components/invitation/video-section';
 import { VenueSection } from '@/components/invitation/venue-section';
 import { ItinerarySection } from '@/components/invitation/itinerary-section';
 import { ParentsSection } from '@/components/invitation/parents-section';
+import { PhotoTimeline } from '@/components/invitation/Photo-time-line';
 import { FooterSection } from '@/components/invitation/footer-section';
 
 export default function Page() {
@@ -15,6 +16,7 @@ export default function Page() {
         <HeroSection />
         <CountdownSection />
         <ParentsSection />
+        <PhotoTimeline />
         <EventDetails />
         <VideoSection />
         <ItinerarySection />

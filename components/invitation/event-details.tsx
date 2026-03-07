@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React from "react"
+import React from 'react';
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
 function CalendarIcon() {
   return (
@@ -77,7 +77,7 @@ function DetailCard({
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -86,8 +86,9 @@ function DetailCard({
   return (
     <div
       ref={ref}
-      className={`flex flex-col items-center text-center p-6 md:p-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
+      className={`flex flex-col items-center text-center p-6 md:p-8 transition-all duration-700 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+      }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center mb-4">
@@ -106,21 +107,24 @@ function DetailCard({
 
 export function EventDetails() {
   const googleCalendarUrl = new URL(
-    "https://calendar.google.com/calendar/render"
+    'https://calendar.google.com/calendar/render',
   );
-  googleCalendarUrl.searchParams.set("action", "TEMPLATE");
+  googleCalendarUrl.searchParams.set('action', 'TEMPLATE');
   googleCalendarUrl.searchParams.set(
-    "text",
-    "XV Años de Valentina - Fiesta Princesa Tiana"
-  );
-  googleCalendarUrl.searchParams.set("dates", "20260321T180000/20260322T010000");
-  googleCalendarUrl.searchParams.set(
-    "details",
-    "Celebracion de los XV Años de Valentina. Tema: Princesa Tiana. Dress code: Elegante, colores verde esmeralda y dorado."
+    'text',
+    '15 Años de Camila - Fiesta Princesa Merida',
   );
   googleCalendarUrl.searchParams.set(
-    "location",
-    "Salon Real de las Flores, Av. Principal 1234, Ciudad"
+    'dates',
+    '20260815T180000/20260816T010000',
+  );
+  googleCalendarUrl.searchParams.set(
+    'details',
+    'Celebracion de los 15 Años de Camila. Tema: Princesa Merida. Dress code: Semi-formal, abstenerce de usar colores verde esmeralda y dorado.',
+  );
+  googleCalendarUrl.searchParams.set(
+    'location',
+    'Salon Real de las Flores, Av. Principal 1234, Ciudad',
   );
 
   return (
@@ -129,7 +133,7 @@ export function EventDetails() {
         {/* Section title */}
         <div className="text-center mb-12">
           <h3 className="text-lg md:text-xl font-body text-muted-foreground uppercase tracking-[0.25em] mb-2">
-            {"Detalles del"}
+            {'Detalles del'}
           </h3>
           <h2 className="text-3xl md:text-5xl font-serif font-semibold text-primary mb-4">
             Evento
@@ -146,7 +150,7 @@ export function EventDetails() {
           <DetailCard
             icon={<CalendarIcon />}
             title="Fecha"
-            line1="21 de Marzo, 2026"
+            line1="15 de Agosto, 2026"
             line2="Sabado"
             delay={0}
           />
@@ -160,7 +164,7 @@ export function EventDetails() {
           <DetailCard
             icon={<MapPinIcon />}
             title="Lugar"
-            line1={"Salon Real de las Flores"}
+            line1={'Salon Real de las Flores'}
             line2="Av. Principal 1234, Ciudad"
             delay={400}
           />

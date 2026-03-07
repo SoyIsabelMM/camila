@@ -10,13 +10,13 @@ const itinerary = [
   },
   {
     time: '6:00 PM',
-    title: 'Misa de Accion de Gracias',
-    description: 'Ceremonia religiosa para dar gracias por estos 15 años',
+    title: 'Ingreso al salón',
+    description: 'Ingreso al salón de eventos para la ceremonia y cena',
   },
   {
     time: '7:00 PM',
     title: 'Primer Vals',
-    description: 'El primer baile de Valentina con su padre',
+    description: 'El primer baile de Camila con su padre Antonio Bravo',
   },
   {
     time: '7:30 PM',

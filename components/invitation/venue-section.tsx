@@ -43,9 +43,9 @@ export function VenueSection() {
           }`}
         >
           {/* Venue image */}
-          <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
+          <div className="relative rounded-2xl overflow-hidden aspect-[1.333]">
             <Image
-              src="/images/venue-bg.png"
+              src="/images/venue-bg.jpg"
               alt="Salon Real de las Flores - Lugar del evento"
               fill
               className="object-cover"
@@ -68,7 +68,7 @@ export function VenueSection() {
               <div className="flex items-center gap-3 justify-center md:justify-start">
                 <svg
                   viewBox="0 0 24 24"
-                  className="w-5 h-5 text-accent flex-shrink-0"
+                  className="w-5 h-5 text-accent shrink-0"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
@@ -84,7 +84,7 @@ export function VenueSection() {
               <div className="flex items-center gap-3 justify-center md:justify-start">
                 <svg
                   viewBox="0 0 24 24"
-                  className="w-5 h-5 text-accent flex-shrink-0"
+                  className="w-5 h-5 text-accent shrink-0"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
@@ -114,7 +114,7 @@ export function VenueSection() {
                 Dress code:
               </span>
               <span className="font-body text-sm text-primary">
-                Elegante - Verde Esmeralda y Dorado
+                Semi-formal, No usar verde esmeralda y dorado{' '}
               </span>
             </div>
           </div>

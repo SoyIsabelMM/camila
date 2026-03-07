@@ -48,64 +48,63 @@ export function ParentsSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Father */}
-            <div className="p-6 rounded-xl bg-card border border-secondary/20">
-              <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
-                <svg
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  aria-hidden="true"
-                >
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
+            <div className="p-6 rounded-xl bg-card border border-secondary/20 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full border-2 border-primary/20 p-1 flex items-center justify-center overflow-hidden">
+                {/* Imagen de la madre */}
+                <img
+                  src="/images/imagen-2.png"
+                  alt="Digmaira Mujica"
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
+
               <p className="font-body text-xs text-muted-foreground uppercase tracking-[0.2em] mb-1">
                 Padre
               </p>
               <p className="text-xl font-serif font-semibold text-primary">
-                {'Carlos Martinez Lopez'}
+                {'Antonio Bravo'}
               </p>
             </div>
 
             {/* Mother */}
-            <div className="p-6 rounded-xl bg-card border border-secondary/20">
-              <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
-                <svg
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  aria-hidden="true"
-                >
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
+            <div className="p-6 rounded-xl bg-card border border-secondary/20 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full border-2 border-primary/20 p-1 flex items-center justify-center overflow-hidden">
+                {/* Imagen de la madre */}
+                <img
+                  src="/images/imagen-1.png"
+                  alt="Digmaira Mujica"
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
+
               <p className="font-body text-xs text-muted-foreground uppercase tracking-[0.2em] mb-1">
                 Madre
               </p>
               <p className="text-xl font-serif font-semibold text-primary">
-                {'Maria Elena Rodriguez'}
+                {'Digmaira Mujica'}
               </p>
             </div>
           </div>
 
           {/* Godparents */}
           <div className="mt-8 p-6 rounded-xl bg-primary/5 border border-secondary/15">
-            <p className="font-body text-xs text-muted-foreground uppercase tracking-[0.2em] mb-3">
+            <p className="font-body text-xs text-muted-foreground uppercase tracking-[0.2em] mb-4">
               Padrinos
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <p className="text-lg font-serif font-semibold text-primary">
-                {'Roberto Hernandez'}
-              </p>
-              <p className="text-lg font-serif font-semibold text-primary">
-                {'Ana Lucia Sanchez'}
-              </p>
+            <div className="flex flex-col items-center gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                <p className="text-lg font-serif font-semibold text-primary">
+                  {'Jacqueline Virguez'}
+                </p>
+                <p className="text-lg font-serif font-semibold text-primary">
+                  {'Juan Carlos Falcón'}
+                </p>
+              </div>
+              <div className="w-full flex justify-center">
+                <p className="text-lg font-serif font-semibold text-primary">
+                  {'Argelia Angulo'}
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const EVENT_DATE = new Date('2026-03-21T18:00:00');
+const EVENT_DATE = new Date('2026-08-15T18:00:00');
 
 function getTimeLeft() {
   const now = new Date();
@@ -34,15 +34,25 @@ function CountdownUnit({ value, label }: { value: number; label: string }) {
 }
 
 export function CountdownSection() {
-  const [timeLeft, setTimeLeft] = useState(getTimeLeft);
+  const [timeLeft, setTimeLeft] = useState<ReturnType<
+    typeof getTimeLeft
+  > | null>(null);
 
   useEffect(() => {
+    setTimeLeft(getTimeLeft());
     const timer = setInterval(() => {
       setTimeLeft(getTimeLeft());
     }, 1000);
     return () => clearInterval(timer);
   }, []);
 
+  // Mostrar placeholder mientras hidrata
+  const displayTime = timeLeft ?? {
+    dias: 0,
+    horas: 0,
+    minutos: 0,
+    segundos: 0,
+  };
   return (
     <section className="py-16 md:py-24 bg-card">
       <div className="max-w-4xl mx-auto px-4 text-center">
@@ -68,10 +78,10 @@ export function CountdownSection() {
         </h2>
 
         <div className="flex justify-center gap-4 md:gap-8">
-          <CountdownUnit value={timeLeft.dias} label="Dias" />
-          <CountdownUnit value={timeLeft.horas} label="Horas" />
-          <CountdownUnit value={timeLeft.minutos} label="Min" />
-          <CountdownUnit value={timeLeft.segundos} label="Seg" />
+          <CountdownUnit value={displayTime.dias} label="Dias" />
+          <CountdownUnit value={displayTime.horas} label="Horas" />
+          <CountdownUnit value={displayTime.minutos} label="Min" />
+          <CountdownUnit value={displayTime.segundos} label="Seg" />
         </div>
       </div>
     </section>

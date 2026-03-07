@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata, Viewport } from 'next';
 import { Cormorant_Garamond, Lato } from 'next/font/google';
 
-import './globals.css';
+import './global.css';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -17,9 +17,9 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: 'Mis XV - Invitacion de Quinceañera',
+  title: 'Mis XV - Camila Bravo Mujica',
   description:
-    'Estas cordialmente invitado a celebrar mis XV años. Un evento magico inspirado en la Princesa Tiana.',
+    'Estas cordialmente invitado a celebrar mis XV años. Un evento mágico inspirado en la Princesa Merida.',
 };
 
 export const viewport: Viewport = {
