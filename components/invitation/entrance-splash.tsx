@@ -1,5 +1,6 @@
 'use client';
 import { useState, useRef, useCallback } from 'react';
+import { assetUrl } from '@/lib/asset-url';
 
 /**
  * Pantalla de bienvenida que requiere interaccion del usuario para
@@ -14,7 +15,7 @@ export function EntranceSplash({ children }: { children: React.ReactNode }) {
   const handleEnter = useCallback(() => {
     // Inicia la musica con la interaccion del usuario
     if (!audioRef.current) {
-      const audio = new Audio('/music/viento-cielo.mp3');
+      const audio = new Audio(assetUrl('/music/viento-cielo.mp3'));
       audio.loop = true;
       audio.volume = 0.4;
       audioRef.current = audio;

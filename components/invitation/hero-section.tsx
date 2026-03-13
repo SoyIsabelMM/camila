@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { assetUrl } from '@/lib/asset-url';
 
 const SPARKLES = [
   { id: 0, top: 15, left: 10, delay: 0, duration: 3.5, size: 6 },
@@ -44,7 +45,7 @@ export function HeroSection() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-bg-pr.jpg')" }}
+        style={{ backgroundImage: `url('${assetUrl('/images/hero-bg-pr.jpg')}')` }}
       />
       <div className="absolute inset-0 bg-[hsl(153,60%,10%)]/70" />
 

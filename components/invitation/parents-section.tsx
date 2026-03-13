@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { assetUrl } from '@/lib/asset-url';
 
 export function ParentsSection() {
   const ref = useRef<HTMLDivElement>(null);
@@ -52,7 +53,7 @@ export function ParentsSection() {
               <div className="w-20 h-20 mx-auto mb-4 rounded-full border-2 border-primary/20 p-1 flex items-center justify-center overflow-hidden">
                 {/* Imagen de la madre */}
                 <img
-                  src="/images/imagen-2.png"
+                  src={assetUrl('/images/imagen-2.png')}
                   alt="Digmaira Mujica"
                   className="w-full h-full object-cover rounded-full"
                 />
@@ -71,7 +72,7 @@ export function ParentsSection() {
               <div className="w-20 h-20 mx-auto mb-4 rounded-full border-2 border-primary/20 p-1 flex items-center justify-center overflow-hidden">
                 {/* Imagen de la madre */}
                 <img
-                  src="/images/imagen-1.png"
+                  src={assetUrl('/images/imagen-1.png')}
                   alt="Digmaira Mujica"
                   className="w-full h-full object-cover rounded-full"
                 />

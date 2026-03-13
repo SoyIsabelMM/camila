@@ -1,10 +1,12 @@
+import { assetUrl } from '@/lib/asset-url';
+
 export function FooterSection() {
   return (
     <footer className="relative py-16 md:py-24 overflow-hidden">
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-bg-pr.jpg')" }}
+        style={{ backgroundImage: `url('${assetUrl('/images/hero-bg-pr.jpg')}')` }}
       />
       <div className="absolute inset-0 bg-[hsl(153,60%,10%)]/80" />
 

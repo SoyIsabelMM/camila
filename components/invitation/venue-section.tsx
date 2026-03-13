@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
+import { assetUrl } from '@/lib/asset-url';
 
 export function VenueSection() {
   const ref = useRef<HTMLDivElement>(null);
@@ -45,7 +46,7 @@ export function VenueSection() {
           {/* Venue image */}
           <div className="relative rounded-2xl overflow-hidden aspect-[1.333]">
             <Image
-              src="/images/venue-bg.jpg"
+              src={assetUrl('/images/venue-bg.jpg')}
               alt="Salon Real de las Flores - Lugar del evento"
               fill
               className="object-cover"
