@@ -18,7 +18,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new ily for Vercel.
+## Base path (deploy at root or under a subpath)
+
+Asset and route paths support both root and subpath deployment via `NEXT_PUBLIC_BASE_PATH`:
+
+- **Root** (e.g. `https://my.domain.com/`): set `NEXT_PUBLIC_BASE_PATH=` (empty) or leave unset, then build and serve the `out/` folder at the domain root.
+- **Subpath** (e.g. `https://my.domain.com/camila/`): set `NEXT_PUBLIC_BASE_PATH=/camila` at build time, then serve the contents of `out/` under that path (e.g. nginx `location /camila/ { alias /path/to/out/; }`).
+
+The value is inlined at build time; change it only by rebuilding.
 
 ## Learn More
 
