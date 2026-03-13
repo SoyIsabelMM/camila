@@ -2,42 +2,43 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
+import { assetUrl } from '@/lib/asset-url';
 
 const photos = [
   {
     year: '2011',
     age: 'Recien nacida',
-    src: '/images/baby.jpg',
+    src: assetUrl('/images/baby.jpg'),
     caption: 'El dia que llego la luz a nuestras vidas',
   },
   {
     year: '2014',
     age: '3 años',
-    src: '/images/toddler.jpg',
+    src: assetUrl('/images/toddler.jpg'),
     caption: 'Primeros pasos, primeras aventuras',
   },
   {
     year: '2017',
     age: '6 años',
-    src: '/images/childhood.jpg',
+    src: assetUrl('/images/childhood.jpg'),
     caption: 'Siempre curiosa, siempre valiente',
   },
   {
     year: '2020',
     age: '9 años',
-    src: '/images/preteen.jpg',
+    src: assetUrl('/images/preteen.jpg'),
     caption: 'Creciendo con fuerza y determinacion',
   },
   {
     year: '2023',
     age: '12 años',
-    src: '/images/teen.jpg',
+    src: assetUrl('/images/teen.jpg'),
     caption: 'Una joven con suenos grandes',
   },
   {
     year: '2026',
     age: '15 años',
-    src: '/images/cami.png',
+    src: assetUrl('/images/cami.png'),
     caption: 'Lista para escribir su propia historia',
   },
 ];
@@ -83,7 +84,7 @@ function PhotoItem({
                 style={{ aspectRatio: '4/3' }}
               >
                 <Image
-                  src={photo.src || '/placeholder.svg'}
+                  src={photo.src || assetUrl('/placeholder.svg')}
                   alt={`Valentina a los ${photo.age}`}
                   fill
                   sizes="(max-width: 768px) 100vw, 320px"
@@ -124,7 +125,7 @@ function PhotoItem({
                 style={{ aspectRatio: '4/3' }}
               >
                 <Image
-                  src={photo.src || '/placeholder.svg'}
+                  src={photo.src || assetUrl('/placeholder.svg')}
                   alt={`Valentina a los ${photo.age}`}
                   fill
                   sizes="(max-width: 768px) 100vw, 320px"
@@ -174,7 +175,7 @@ function PhotoItem({
             style={{ aspectRatio: '4/3' }}
           >
             <Image
-              src={photo.src || '/placeholder.svg'}
+              src={photo.src || assetUrl('/placeholder.svg')}
               alt={`Valentina a los ${photo.age}`}
               fill
               sizes="(max-width: 768px) 100vw, 320px"
