@@ -4,34 +4,34 @@ import { useEffect, useRef, useState } from 'react';
 
 const itinerary = [
   {
-    time: '5:30 PM',
-    title: 'Recepcion de Invitados',
+    time: '7:30 PM',
+    title: 'Recepción de Invitados',
     description: 'Bienvenida con coctel y musica en vivo',
   },
   {
-    time: '6:00 PM',
+    time: '8:00 PM',
     title: 'Ingreso al salón',
     description: 'Ingreso al salón de eventos para la ceremonia y cena',
   },
   {
-    time: '7:00 PM',
+    time: '9:00 PM',
     title: 'Primer Vals',
     description: 'El primer baile de Camila con su padre Antonio Bravo',
   },
   {
-    time: '7:30 PM',
+    time: '9:30 PM',
     title: 'Brindis y Cena',
     description: 'Cena de gala con platillos selectos',
   },
   {
-    time: '9:00 PM',
+    time: '10:30 PM',
     title: 'Fiesta y Baile',
-    description: 'Noche de musica, baile y diversion para todos',
+    description: 'Noche de música, baile y diversión para todos',
   },
   {
-    time: '12:00 AM',
+    time: '03:00 AM',
     title: 'Despedida',
-    description: 'Agradecimiento y cierre de una noche magica',
+    description: 'Agradecimiento y cierre de una noche mágica',
   },
 ];
 

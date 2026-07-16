@@ -45,7 +45,9 @@ export function HeroSection() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('${assetUrl('/images/hero-bg-pr.jpg')}')` }}
+        style={{
+          backgroundImage: `url('${assetUrl('/images/hero-bg-pr.jpg')}')`,
+        }}
       />
       <div className="absolute inset-0 bg-[hsl(153,60%,10%)]/70" />
 
@@ -116,7 +118,7 @@ export function HeroSection() {
 
         <p className="font-body text-secondary/70 text-sm md:text-base max-w-md mx-auto leading-relaxed">
           {
-            'Con la gracia de Dios y la bendicion de mis padres, te invito a celebrar conmigo este dia tan especial'
+            'Dios ha sido mi guía, mi luz y el creador de cada una de mis sonrisas. Como en un cuento de hadas, hoy empiezo a escribir un nuevo capítulo en mi vida y llegó el momento de celebrar mis Quince años. Quiero que seas parte de esta noche tan mágica y especial para mí y mi familia'
           }
         </p>
 

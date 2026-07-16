@@ -116,16 +116,21 @@ export function EventDetails() {
   );
   googleCalendarUrl.searchParams.set(
     'dates',
-    '20260815T180000/20260816T010000',
+    '20260815T200000/20260816T030000',
   );
   googleCalendarUrl.searchParams.set(
     'details',
-    'Celebracion de los 15 Años de Camila. Tema: Princesa Merida. Dress code: Semi-formal, abstenerce de usar colores verde esmeralda y dorado.',
+    '¡Te esperamos para celebrar juntos!\n\n' +
+      '👑 Celebración de los 15 Años de Camila.\n' +
+      '🏹 Tema: Princesa Mérida.\n' +
+      '👗 Dress code: Semi-formal (por favor, abstenerse de usar colores verde esmeralda y dorado).\n\n' +
+      '📅 Agradecemos confirmar asistencia antes del Sábado 01 de Agosto.',
   );
   googleCalendarUrl.searchParams.set(
     'location',
-    'Salon Real de las Flores, Av. Principal 1234, Ciudad',
+    'Centro Atlántico Madeira Club, Salón Atlántico, Av. Terepaima, sector Las Tunas, Agua Viva, Cabudare',
   );
+  googleCalendarUrl.searchParams.set('remind', '1440');
 
   return (
     <section className="py-16 md:py-24 bg-background">
@@ -157,15 +162,15 @@ export function EventDetails() {
           <DetailCard
             icon={<ClockIcon />}
             title="Hora"
-            line1="6:00 PM"
+            line1="8:00 PM"
             line2="Recepcion a las 5:30 PM"
             delay={200}
           />
           <DetailCard
             icon={<MapPinIcon />}
             title="Lugar"
-            line1={'Salon Real de las Flores'}
-            line2="Av. Principal 1234, Ciudad"
+            line1={'Centro Atlántico Madeira Club, Salón Atlántico'}
+            line2="Av. Terepaima, sector Las Tunas, Agua Viva, Cabudare"
             delay={400}
           />
         </div>
