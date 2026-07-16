@@ -12,11 +12,11 @@ export default function Page() {
     <EntranceSplash>
       <main className="min-h-screen">
         <HeroSection />
+        <EventDetails />
         <CountdownSection />
         <ParentsSection />
-        <EventDetails />
-        <VideoSection />
         <VenueSection />
+        <VideoSection />
         <FooterSection />
       </main>
     </EntranceSplash>
