@@ -60,7 +60,7 @@ export function ParentsSection() {
               </div>
 
               <p className="font-body text-xs text-muted-foreground uppercase tracking-[0.2em] mb-1">
-                Padre
+                Papá
               </p>
               <p className="text-xl font-serif font-semibold text-primary">
                 {'Antonio Bravo'}
@@ -79,7 +79,7 @@ export function ParentsSection() {
               </div>
 
               <p className="font-body text-xs text-muted-foreground uppercase tracking-[0.2em] mb-1">
-                Madre
+                Mamá
               </p>
               <p className="text-xl font-serif font-semibold text-primary">
                 {'Digmaira Mujica'}

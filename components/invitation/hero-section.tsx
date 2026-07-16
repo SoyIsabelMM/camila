@@ -116,7 +116,7 @@ export function HeroSection() {
           Camila
         </p>
 
-        <p className="font-body text-secondary/70 text-sm md:text-base max-w-md mx-auto leading-relaxed">
+        <p className="font-body text-secondary/70 text-xl md:text-xl max-w-md mx-auto leading-relaxed">
           {
             'Dios ha sido mi guía, mi luz y el creador de cada una de mis sonrisas. Como en un cuento de hadas, hoy empiezo a escribir un nuevo capítulo en mi vida y llegó el momento de celebrar mis Quince años. Quiero que seas parte de esta noche tan mágica y especial para mí y mi familia'
           }

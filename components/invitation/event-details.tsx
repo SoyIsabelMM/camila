@@ -156,14 +156,14 @@ export function EventDetails() {
             icon={<CalendarIcon />}
             title="Fecha"
             line1="15 de Agosto, 2026"
-            line2="Sabado"
+            line2="Sábado"
             delay={0}
           />
           <DetailCard
             icon={<ClockIcon />}
             title="Hora"
             line1="8:00 PM"
-            line2="Recepcion a las 5:30 PM"
+            line2="Recepción a las 7:30 PM"
             delay={200}
           />
           <DetailCard

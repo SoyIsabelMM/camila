@@ -111,11 +111,11 @@ export function VenueSection() {
               >
                 <path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z" />
               </svg>
-              <span className="font-body text-sm text-primary font-bold">
-                Dress code:
+              <span className="font-body text-l text-primary">
+                Código de Vestimenta:
               </span>
-              <span className="font-body text-sm text-primary">
-                Semi-formal, No usar verde esmeralda y dorado{' '}
+              <span className="font-body text-l text-primary font-bold">
+                Coctel, Sugerimos evitar el uso del color Verde{' '}
               </span>
             </div>
             {/*Confirmation*/}
@@ -130,10 +130,10 @@ export function VenueSection() {
               >
                 <path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z" />
               </svg>
-              <span className="font-body text-sm text-primary font-bold">
+              <span className="font-body text-l text-primary">
                 Confirmación:
               </span>
-              <span className="font-body text-sm text-primary">
+              <span className="font-body text-l text-primary font-bold">
                 Agradecemos confirmar asistencia antes del Sábado 01 de Agosto
               </span>
             </div>
