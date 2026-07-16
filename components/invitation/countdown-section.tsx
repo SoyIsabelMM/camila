@@ -74,7 +74,7 @@ export function CountdownSection() {
           Faltan
         </h3>
         <h2 className="text-3xl md:text-5xl font-serif font-semibold text-primary mb-12">
-          {'Para el Gran Dia'}
+          {'Para el Gran Día'}
         </h2>
 
         <div className="flex justify-center gap-4 md:gap-8">
