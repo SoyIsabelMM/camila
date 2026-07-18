@@ -115,7 +115,7 @@ export function VenueSection() {
                 Código de Vestimenta:
               </span>
               <span className="font-body text-l text-primary font-bold">
-                Coctel, Sugerimos evitar el uso del color Verde{' '}
+                Semi-Formal, Sugerimos evitar el uso del color Verde{' '}
               </span>
             </div>
             {/*Confirmation*/}
