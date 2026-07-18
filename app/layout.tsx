@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: 'Mis XV - Camila Bravo Mujica',
   description:
     'Estas cordialmente invitado a celebrar mis XV años. Un evento mágico inspirado en la Princesa Merida.',
+  icons: {
+    icon: 'favicon.ico',
+  },
 };
 
 export const viewport: Viewport = {
