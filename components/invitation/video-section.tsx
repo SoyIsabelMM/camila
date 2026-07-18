@@ -95,7 +95,7 @@ export function VideoSection() {
               {/* Proporción 9:16 vertical */}
               <div className="relative aspect-9/16 bg-primary/10">
                 <video
-                  src="/videos/video-camila-cumple.mp4"
+                  src="videos/video-camila-cumple.mp4"
                   autoPlay
                   muted
                   loop
