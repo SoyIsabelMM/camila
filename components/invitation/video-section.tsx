@@ -35,17 +35,17 @@ export function VideoSection() {
           </div>
         </div>
 
-        {/* Video Frame */}
+        {/* Video Frame Container - max-w-sm centers and scales the 9:16 aspect ratio */}
         <div
           ref={ref}
-          className={`relative transition-all duration-1000 ${
+          className={`max-w-sm mx-auto relative transition-all duration-1000 ${
             isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           }`}
         >
           {/* Ornate frame border */}
-          <div className="relative p-3 md:p-5 bg-primary/5 rounded-2xl">
+          <div className="relative p-3 md:p-5 bg-primary/5 rounded-2xl shadow-md">
             {/* Corner ornaments */}
-            <div className="absolute top-0 left-0 w-12 h-12 md:w-16 md:h-16">
+            <div className="absolute top-0 left-0 w-12 h-12 md:w-16 md:h-16 z-20 pointer-events-none">
               <svg
                 viewBox="0 0 60 60"
                 className="w-full h-full text-secondary/60"
@@ -56,7 +56,7 @@ export function VideoSection() {
                 <path d="M5 5 Q25 5 25 25 Q5 25 5 5 Z" opacity="0.2" />
               </svg>
             </div>
-            <div className="absolute top-0 right-0 w-12 h-12 md:w-16 md:h-16 -scale-x-100">
+            <div className="absolute top-0 right-0 w-12 h-12 md:w-16 md:h-16 -scale-x-100 z-20 pointer-events-none">
               <svg
                 viewBox="0 0 60 60"
                 className="w-full h-full text-secondary/60"
@@ -67,7 +67,7 @@ export function VideoSection() {
                 <path d="M5 5 Q25 5 25 25 Q5 25 5 5 Z" opacity="0.2" />
               </svg>
             </div>
-            <div className="absolute bottom-0 left-0 w-12 h-12 md:w-16 md:h-16 -scale-y-100">
+            <div className="absolute bottom-0 left-0 w-12 h-12 md:w-16 md:h-16 -scale-y-100 z-20 pointer-events-none">
               <svg
                 viewBox="0 0 60 60"
                 className="w-full h-full text-secondary/60"
@@ -78,7 +78,7 @@ export function VideoSection() {
                 <path d="M5 5 Q25 5 25 25 Q5 25 5 5 Z" opacity="0.2" />
               </svg>
             </div>
-            <div className="absolute bottom-0 right-0 w-12 h-12 md:w-16 md:h-16 scale-x-[-1] scale-y-[-1]">
+            <div className="absolute bottom-0 right-0 w-12 h-12 md:w-16 md:h-16 scale-x-[-1] scale-y-[-1] z-20 pointer-events-none">
               <svg
                 viewBox="0 0 60 60"
                 className="w-full h-full text-secondary/60"
@@ -91,26 +91,28 @@ export function VideoSection() {
             </div>
 
             {/* Inner border */}
-            <div className="border-2 border-secondary/30 rounded-xl overflow-hidden">
-              <div className="relative aspect-video bg-primary/10">
-                {/* 
-                  Replace the src below with the actual video URL.
-                  Supports YouTube embeds, Vimeo, or direct video files.
-                */}
-                <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="Video de la Quinceañera"
-                  className="absolute inset-0 w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+            <div className="border-2 border-secondary/30 rounded-xl overflow-hidden relative z-10">
+              {/* Proporción 9:16 vertical */}
+              <div className="relative aspect-9/16 bg-primary/10">
+                <video
+                  src="/videos/video-camila-cumple.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls
+                  preload="none" // 🚀 Clave para retrasar la descarga de los 8MB hasta que se necesite
+                  className="absolute inset-0 w-full h-full object-cover"
+                >
+                  Tu navegador no soporta la reproducción de este video.
+                </video>
               </div>
             </div>
           </div>
 
           {/* Caption below the video */}
           <p className="text-center font-body text-sm text-muted-foreground mt-4 italic">
-            {'Un vistazo a este hermoso camino hacia mis XV años'}
+            {'Un vistazo a este hermoso camino hacia mis 15 años'}
           </p>
         </div>
       </div>
